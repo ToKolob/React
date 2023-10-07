@@ -15,7 +15,7 @@ export function Input(props) {
         id="passwordSize"
         min="1"
         value={props.passwordSize}
-        onChange={(ev) => props.setPasswordSize(ev.target.value)} />
+        onChange={(ev) => props.setPasswordSize(+ev.target.value)} />
 
     </div>
   );
