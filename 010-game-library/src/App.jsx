@@ -1,72 +1,32 @@
-import  { useState } from 'react'
+import  Game  from './components/Game'
+import  NewGameForm  from './components/NewGameForm'
+import  useGameColection  from './hooks/useGameColection'
 
 export default function App() {
-  const [games, setGames] = useState([])
-  const [title, setTitle] = useState('')
-  const [cover, setCover] = useState('')
-  
-  const addGame = ({title, cover}) => {
-    const id = Math.floor(Math.random() * 1000000)
-    const game = {id, title, cover}
-    setGames(games =>{
-      
-      const newState = [...games, game]
-      localStorage.setItem('obc-game-lib', JSON.stringify(newState))
-      return newState
-    })
-  }
-
-  function handleSubmit(e) {
-  e.preventDefault()
-  console.log(e.target)
-  addGame({title,cover});
-  setTitle('')
-  setCover('')
-  }
-
-
-  function deleteGame(id) {
-    const newState = games.filter(game => game.id !== id)    
-    localStorage.setItem('obc-game-lib', JSON.stringify(newState))
-  }
-
-
-
-
-
+  const { games, addGame, deleteGame } = useGameColection()
 
   return (
     <div className="App">
       <h1>Games Library</h1>
-      <form action="">
-        <div>
-          <label htmlFor="title">Title:</label>
-          <input 
-            type="text" 
-            id="tile"
-            value={title}
-            onChange={(ev) => setTitle(ev.target.value)}
-          />   
-        </div>
-        <div>
-          <label htmlFor="cover">Cover:</label>
-          <input 
-            type="text" 
-            id="cover" 
-            value={cover}
-            onChange={(ev) => setCover(ev.target.value)}
-          />
-        </div>
-        <button onClick={handleSubmit}>Submit</button>
-      </form>
+
+      <NewGameForm addGame={addGame} />
+
       <div className="games">
-        {games.map(game => (
-          <div className="game" key={game.id}>
-            <img src={game.cover} alt={game.title} />
-            <h2>{game.title}</h2>
-            <button onClick={() => deleteGame(game.id)}>Delete</button>
-          </div>
-        ))}
+        {
+          games.length > 0 ?
+          games.map(game => (
+            <Game 
+              key={game.id}
+              title={game.title}
+              cover={game.cover}
+              onRemove={() => deleteGame(game.id)}
+            />
+
+
+          ))
+          :
+          <h2>There are no games, insert games above.</h2>
+        }
       </div>
     </div>
   )
