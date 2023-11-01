@@ -1,0 +1,33 @@
+body{
+  background-color: #f6f6f6;
+  color: rgb(0, 0, 0);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  
+}
+div.App{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: #d8d8d8;
+  border-radius: 5px;
+  padding: 50px;
+  margin: 10px;
+  gap: 20px;
+}
+div.App form{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 10px;
+}
+div.email, div.commentary{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+
+}
