@@ -1,0 +1,74 @@
+{
+  "inventoryItems": [
+    {
+      "id": "27384019283746502819",
+      "name": "T-shirt",
+      "quantityInStock": 50,
+      "category": "Apparel",
+      "dateAdded": "2023-12-27T12:00:00Z"
+    },
+    {
+      "id": "91827364502938475610",
+      "name": "Running Shoes",
+      "quantityInStock": 30,
+      "category": "Footwear",
+      "dateAdded": "2023-12-27T12:15:00Z"
+    },
+    {
+      "id": "50617283940192837456",
+      "name": "Laptop",
+      "quantityInStock": 10,
+      "category": "Electronics",
+      "dateAdded": "2023-12-27T12:30:00Z"
+    },
+    {
+      "id": "19283746502938475610",
+      "name": "Book",
+      "quantityInStock": 100,
+      "category": "Books",
+      "dateAdded": "2023-12-27T12:45:00Z"
+    },
+    {
+      "id": "10293847560192837465",
+      "name": "Headphones",
+      "quantityInStock": 20,
+      "category": "Electronic Accessories",
+      "dateAdded": "2023-12-27T13:00:00Z"
+    },
+    {
+      "id": "39485760192837465012",
+      "name": "Backpack",
+      "quantityInStock": 40,
+      "category": "Accessories",
+      "dateAdded": "2023-12-27T13:15:00Z"
+    },
+    {
+      "id": "18273649506192837402",
+      "name": "Sunglasses",
+      "quantityInStock": 15,
+      "category": "Accessories",
+      "dateAdded": "2023-12-27T13:30:00Z"
+    },
+    {
+      "id": "59483726019283746015",
+      "name": "Smartphone",
+      "quantityInStock": 25,
+      "category": "Electronics",
+      "dateAdded": "2023-12-27T13:45:00Z"
+    },
+    {
+      "id": "92038475601928374056",
+      "name": "Desk Chair",
+      "quantityInStock": 5,
+      "category": "Furniture",
+      "dateAdded": "2023-12-27T14:00:00Z"
+    },
+    {
+      "id": "12345678901234567890",
+      "name": "Gaming Console",
+      "quantityInStock": 8,
+      "category": "Entertainment",
+      "dateAdded": "2023-12-27T14:15:00Z"
+    }
+  ]
+}

@@ -1,19 +1,21 @@
 import AddExpensesOrIncome from "./AddExpensesOrIncome";
 import Categories from "./Categories";
 import Historical from "./Historical";
+import PropTypes from "prop-types";
 
-//props
-const monthName = 'January';
+MonthComponent.propTypes = {
+  monthName: PropTypes.string.isRequired
+}
 
-export default function MonthComponent() {
-
+export default function MonthComponent({ monthName }) {
 
   return (
     <div>
       <h2>{monthName}</h2>
-      <Categories categories={categories} historicalItems={historicalItems} />
-      <Historical historicalItems={historicalItems} />
-      <AddExpensesOrIncome onAddItem={onAddItem} />
+      <Categories
+        monthName={monthName} />
+      <AddExpensesOrIncome />
+      <Historical />
 
     </div>
   )

@@ -1,0 +1,6 @@
+[
+  { "id": 1, "month": "January", "name": "Moradia", "value": 1000 },
+  { "id": 2, "month": "January",  "name": "Alimentação", "value": 500 },
+  { "id": 3, "month": "January",  "name": "Transporte", "value": 300 },
+  { "id": 4, "month": "February",  "name": "Saúde", "value": 200 }
+]
