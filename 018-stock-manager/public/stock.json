@@ -54,21 +54,21 @@
       "name": "Smartphone",
       "quantityInStock": 25,
       "category": "Electronics",
-      "dateAdded": "2023-12-27T13:45:00Z"
+      "dateAdded": "2023-12-19T13:45:00Z"
     },
     {
       "id": "92038475601928374056",
       "name": "Desk Chair",
       "quantityInStock": 5,
       "category": "Furniture",
-      "dateAdded": "2023-12-27T14:00:00Z"
+      "dateAdded": "2023-12-17T14:00:00Z"
     },
     {
       "id": "12345678901234567890",
       "name": "Gaming Console",
       "quantityInStock": 8,
       "category": "Entertainment",
-      "dateAdded": "2023-12-27T14:15:00Z"
+      "dateAdded": "2023-11-27T14:15:00Z"
     }
   ]
 }
