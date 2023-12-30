@@ -1,5 +1,6 @@
 import { recentAddedList, lowStockList } from "../loader/products"
 import { inventoryItems } from "../../public/stock.json"
+import { Link } from "react-router-dom"
 export default function Lists() {
   
   return (
@@ -12,7 +13,7 @@ export default function Lists() {
         {recentAddedList(inventoryItems).map((item) => (
           <div key={item.id}>
             <label>{item.name}</label>
-            <button>See</button>
+            <Link to={`/product/${item.id}`}><button className="see">See</button></Link>            
           </div>
           
         ))}
@@ -26,7 +27,7 @@ export default function Lists() {
         {lowStockList(inventoryItems).map((item) => (
           <div key={item.id}>
             <label>{item.name}</label>
-            <button>See</button>
+            <button className="see">See</button>
           </div>
         ))}
       </div>

@@ -1,22 +1,36 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { useLoaderData } from "react-router-dom"
+import { deleteProduct } from "../loader/products"
+
+
+
 export default function Product() {
-  const { product } = useLoaderData()
+  const product = useLoaderData()
 
   return (
-    <div>
-      <h3>{product.name}</h3>
-      <button>Update</button>
-      <button>Delete</button>
+    <div id="product">
+      <div className="row">
+        <h3>{product.name}</h3>
+        <button className="update">Update</button>
+        <button className="delete" onClick={() => deleteProduct(product.id)}>Delete</button>
+      </div>
+      <div className="row">
+        <div className="dark">
+          <p>{`Category: ${product.category}`}</p>
+        </div>
+        <div className="dark">
+          <p>{`Quantity in Stock: ${product.quantityInStock}`} </p>
+        </div>
+        <div className="dark">
+          <p>{`Price: ${product.price}`}</p>
+        </div>
+      </div>
 
-      <div className="dark">
-        <p>{product.category}</p>
-      </div>
-      <div className="dark">
-        <p>{product.quantityInStock}</p>
-      </div>
-      <p>{product.description}</p>
-      <p>{product.dateAdded}</p>
-      <Link to=".." relative="path">Back</Link>
+      <p>Description: {product.description || "No description available"}</p>
+      <p>Date Added: {product.dateAdded}</p>
+      <p>Date Modified: {product.dateModified}</p>
     </div>
   )
 }
+
+
+

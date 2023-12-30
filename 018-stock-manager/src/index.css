@@ -43,6 +43,9 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  height: fit-content;
+  width: fit-content;
+
 }
 button:hover {
   border-color: #646cff;
@@ -145,6 +148,7 @@ tbody{
 }
 
 .see{
+  font-weight: bold;
   background: #747bff;
   color: #1a1a1a;
 }
@@ -153,10 +157,51 @@ tbody{
   border: none;
 } 
 .delete{
+  font-weight: bold;
   background: #ff0000;
   color: #1a1a1a;
 }
 .delete:hover{
   background: #b30000;
   border: none;
+}
+.update{
+  font-weight: bold;
+  background: #f9f9f9;
+  color: #1a1a1a;
+}
+.update:hover{
+  background: #b3b3b3;
+  border: none;
+}
+#product{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  
+}
+#product div.row{
+  margin: 5px;
+  display: flex;
+  gap: 20px;
+}
+form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 900px;
+  margin: 20px;
+}
+form div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+textarea{
+  display: flex;
+  width: 100%;
+}
+.buttonLayout{
+  margin: 0px 20px 10px 0; 
 }

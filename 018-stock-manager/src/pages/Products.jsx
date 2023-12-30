@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { inventoryItems } from "../../public/stock.json";
+import { deleteProduct } from "../loader/products"
 export default function Products() {
 
   //list of products in table format with id, name, quantity in stock, category, date added and 2 buttons to edit and delete.
@@ -26,10 +27,10 @@ export default function Products() {
             <td>{item.quantityInStock}</td>
             <td>{item.category}</td>
             <td> 
-              <Link to={`/product/${item.id}`}><button className="see">See</button> </Link>
+              <Link to={`/product/${item.id}`}><button className="see">See</button></Link>
               
-              <button>Update</button> 
-              <button className="delete">Delete</button></td>
+              <button className="update">Update</button> 
+              <button className="delete" onClick={() => deleteProduct(item.id)}>Delete</button></td>
           </tr>        
         ))}
       </tbody>

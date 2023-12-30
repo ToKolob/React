@@ -5,7 +5,10 @@
       "name": "T-shirt",
       "quantityInStock": 50,
       "category": "Apparel",
-      "dateAdded": "2023-12-27T12:00:00Z"
+      "price": 19.99,
+      "description": "Cotton t-shirt",
+      "dateAdded": "2023-12-27T12:00:00Z",
+      "dateModified": "2023-12-27T12:00:00Z"
     },
     {
       "id": "91827364502938475610",
@@ -68,7 +71,10 @@
       "name": "Gaming Console",
       "quantityInStock": 8,
       "category": "Entertainment",
-      "dateAdded": "2023-11-27T14:15:00Z"
+      "dateAdded": "2023-11-27T14:15:00Z",
+      "dateModified": "2023-12-24T14:15:00Z",
+      "description": "PlayStation 5",
+      "price": 499.99
     }
   ]
 }
