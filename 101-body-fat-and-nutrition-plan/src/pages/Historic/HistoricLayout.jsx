@@ -4,8 +4,6 @@ export default function HistoricLayout() {
     <div>
       <Link to="new"> NewHistoric</Link>
       <Link to=""> HistoricList</Link>
-      <Link to="1"> DetailHistoric</Link>
-      <Link to="1/edit"> EditHistoric</Link>
       <Outlet />
     </div>
   )

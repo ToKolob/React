@@ -12,7 +12,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+* {
+  
+  margin: 10px;
+}
+button {
+  margin: 20px;
+  padding: 10px;
+}
 a {
   font-weight: 500;
   color: #646cff;

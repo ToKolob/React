@@ -1,7 +1,8 @@
+import HistoricTable from "../../components/HistoricTable";
 export default function HistoricList() {
   return (
     <div>
-      <h1>HistoricList</h1>
+      <HistoricTable />
     </div>
   )
 }
